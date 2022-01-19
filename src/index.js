@@ -1,6 +1,6 @@
 const app = require("./express/app");
 
-const PORT = 7000;
+const PORT = 80;
 const HOST = "127.0.0.1";
 
 app.listen(PORT, HOST, () => {

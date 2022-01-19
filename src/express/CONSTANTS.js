@@ -7,11 +7,12 @@ const JWT_Config = {
 const SALT_ROUNDS = 10;
 
 const CORS_Config = {
-  origin: "https://blog-react-shivangam-soni.netlify.app/",
+  origin: "*",
 };
 
 module.exports = {
   JWT_Secrete_Key,
   JWT_Config,
   SALT_ROUNDS,
+  CORS_Config,
 };
