@@ -1,0 +1,27 @@
+{
+  "name": "blog-react-backend",
+  "version": "1.0.0",
+  "description": "Backend for The REACT Blog Web App",
+  "main": "./src/index.js",
+  "author": "Shivangam Soni",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "uuid": "^8.3.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "./src/Models"
+    ]
+  }
+}
