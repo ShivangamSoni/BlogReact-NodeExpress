@@ -6,13 +6,8 @@ const JWT_Config = {
 
 const SALT_ROUNDS = 10;
 
-const CORS_Config = {
-  origin: "https://shivi-blog-node.herokuapp.com/api/v1/blogs",
-};
-
 module.exports = {
   JWT_Secrete_Key,
   JWT_Config,
   SALT_ROUNDS,
-  CORS_Config,
 };
