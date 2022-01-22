@@ -70,6 +70,19 @@ router.get("/:id", (req, res) => {
 });
 
 /**
+ * @method GET
+ * @listens /api/v1/blogs/category/:category
+ * @description Retrieve
+ */
+router.get("/category/:category", (req, res) => {
+  const { category } = req.params;
+
+  const blogs = BLOGS.filter((blog) => blog.category.toLowerCase() === category);
+
+  res.json({ success: true, data: { blogs } });
+});
+
+/**
  * @method DELETE
  * @listens /api/v1/blogs/:id
  * @description Delete Blog using ID. Should happen only if user Authenticated
